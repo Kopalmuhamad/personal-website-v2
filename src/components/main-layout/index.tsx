@@ -1,7 +1,6 @@
 import React from "react";
 import Navbar from "../navbar";
 import Footer from "../footer";
-import AnimatedBackground from "../animated-background/animated-backgrouond";
 
 interface IMainLayoutProps {
   children: React.ReactNode;
