@@ -3,7 +3,9 @@ import { Download } from "lucide-react";
 
 const About = () => {
   return (
-    <main className="pt-[80px] flex flex-col items-start justify-start gap-y-4">
+    <main
+      className="pt-[80px] flex flex-col items-start justify-start gap-y-4"
+    >
       <header className="w-full">
         <h1 className="text-xl sm:text-2xl md:text-4xl font-semibold relative w-fit before:absolute before:w-full before:h-[4px] before:rounded-full before:top-full before:bg-light">
           About Me

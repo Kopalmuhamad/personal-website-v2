@@ -58,7 +58,9 @@ const Contact = () => {
   };
 
   return (
-    <main className="pt-[80px] flex flex-col items-stretch justify-start gap-y-8">
+    <main
+      className="pt-[80px] flex flex-col items-stretch justify-start gap-y-8"
+    >
       <header className="w-full">
         <h1 className="text-xl sm:text-2xl md:text-4xl font-semibold relative w-fit before:absolute before:w-full before:h-[4px] before:rounded-full before:top-full before:bg-light">
           Contact

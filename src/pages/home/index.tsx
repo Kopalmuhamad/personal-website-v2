@@ -11,7 +11,9 @@ const Home = () => {
     <MainLayout>
       <section className="w-full min-h-screen pt-[70px] text-light">
         <Container>
-          <Hero />
+          <section id="hero">
+            <Hero />
+          </section>
         </Container>
         <MarqueeText baseVelocity={-5} fontSize="48px" color="text-acceent">
           Frontend Website Developer.
@@ -20,9 +22,15 @@ const Home = () => {
           Frontend Website Developer.
         </MarqueeText>
         <Container>
-          <About />
-          <Project />
-          <Contact />
+          <section id="about">
+            <About />
+          </section>
+          <section id="project">
+            <Project />
+          </section>
+          <section id="contact">
+            <Contact />
+          </section>
         </Container>
       </section>
     </MainLayout>

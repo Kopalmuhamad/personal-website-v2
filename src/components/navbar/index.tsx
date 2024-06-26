@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link as RouterLink } from "react-router-dom";
 import { Menu } from "lucide-react";
+import { Link } from "react-scroll";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -34,19 +35,47 @@ const Navbar = () => {
       }`}
     >
       <div className="container mx-auto h-full flex items-center justify-between">
-        <Link to={"/"}>KopalMuhamad</Link>
+        <RouterLink to={"/"}>KopalMuhamad</RouterLink>
         <ul className="hidden sm:flex items-center justify-center gap-4">
           <li>
-            <Link to={"#"}>Home</Link>
+            <Link
+              className="cursor-pointer"
+              to="hero"
+              smooth={true}
+              duration={500}
+            >
+              Home
+            </Link>
           </li>
           <li>
-            <Link to={"#"}>About</Link>
+            <Link
+              className="cursor-pointer"
+              to="about"
+              smooth={true}
+              duration={500}
+            >
+              About
+            </Link>
           </li>
           <li>
-            <Link to={"#"}>Project</Link>
+            <Link
+              className="cursor-pointer"
+              to="project"
+              smooth={true}
+              duration={500}
+            >
+              Project
+            </Link>
           </li>
           <li>
-            <Link to={"#"}>Contact</Link>
+            <Link
+              className="cursor-pointer"
+              to="contact"
+              smooth={true}
+              duration={500}
+            >
+              Contact
+            </Link>
           </li>
         </ul>
         <div className="block sm:hidden">
@@ -56,16 +85,24 @@ const Navbar = () => {
             </DropdownMenuTrigger>
             <DropdownMenuContent>
               <DropdownMenuItem>
-                <Link to={"/"}>Home</Link>
+                <Link to="hero" smooth={true} duration={500}>
+                  Home
+                </Link>
               </DropdownMenuItem>
               <DropdownMenuItem>
-                <Link to={"/"}>About</Link>
+                <Link to="about" smooth={true} duration={500}>
+                  About
+                </Link>
               </DropdownMenuItem>
               <DropdownMenuItem>
-                <Link to={"/"}>Project</Link>
+                <Link to="project" smooth={true} duration={500}>
+                  Project
+                </Link>
               </DropdownMenuItem>
               <DropdownMenuItem>
-                <Link to={"/"}>Contact</Link>
+                <Link to="contact" smooth={true} duration={500}>
+                  Contact
+                </Link>
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>

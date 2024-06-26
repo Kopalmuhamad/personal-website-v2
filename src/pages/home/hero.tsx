@@ -3,7 +3,7 @@ import { User } from "lucide-react";
 
 const Hero = () => {
   return (
-    <main className="flex items-center justify-start pt-[40px] pb-[40px]">
+    <main className="flex items-center justify-start pt-[40px] pb-[40px]" >
       <div className="flex items-start justify-start flex-col gap-y-2">
         <h1 className="text-2xl sm:text-4xl md:text-6xl font-semibold">
           Hello my name is
